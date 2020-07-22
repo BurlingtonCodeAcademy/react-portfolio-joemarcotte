@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import "./App.css";
 
 class Header extends React.Component {
@@ -13,20 +13,18 @@ class Header extends React.Component {
 	render() {
 		return (
 			<div id="banner" className="page">
-				<Link to={"/"} className="bannerSelector">
+				<Link to="/" className="bannerSelector">
 					<div>Home</div>
 				</Link>
 
-				<Link to={"/about"} className="bannerSelector">
+				<Link to="/about" className="bannerSelector">
 					<div>About Me</div>
 				</Link>
 
-				<Link to={"/projects"} className="bannerSelector">
+				<Link to="/projects" className="bannerSelector">
 					<div>Projects</div>
 				</Link>
-
-
-			</div> 
+			</div>
 		);
 	}
 }

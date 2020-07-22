@@ -4,8 +4,8 @@ import { Switch, Route } from "react-router-dom";
 import Header from "./Header";
 import Home from "./Home";
 import About from "./About";
-import Projects from "./Projects";
-import Footer from "./Footer";
+//import Projects from "./Projects";
+// import Footer from "./Footer";
 import Form from "./Form";
 
 class App extends React.Component {
@@ -39,20 +39,22 @@ class App extends React.Component {
 						{/*Header - at top of all pages */}
 						<Header />
 					</div>
+
 					<Switch>
-						{" "}
+					
 						{/* Component page paths */}
-						<Route exact path={"/"} component={Home} />
-						<Route path={"/about"} component={About} />
-						<Route path={"/projects"} component={Projects} />
+						<Route exact path="/" render={() => <Home />} />
+						<Route path="/about" render={() => <About />} />
+						{/*<Route path={"/projects"} render={() => <Projects />} />*/}
 					</Switch>
+
 					<div id="bottom">
 						{" "}
-						{ /*Footer - sticks to bottom and gets pushed down by content */}
-						<Footer
+						{/*Footer - sticks to bottom and gets pushed down by content */}
+						{/*	<Footer
 							modalOpen={this.state.modalOpen}
 							handleOpen={this.handleOpen}
-						/>
+						/>*/}
 					</div>
 
 					<div

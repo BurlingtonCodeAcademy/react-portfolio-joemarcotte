@@ -8,6 +8,7 @@ body {
 #body {
 	display: flex;
 	flex-direction: column;
+	background-color: black;
 }
 
 #content {
@@ -123,47 +124,6 @@ body {
 
 /* Projects page styling */
 
-#projectsPage {
-	margin: 2em 1em 1em 1em;
-	padding: 1em;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	color: rgb(12, 108, 187);
-}
-
-@media screen and (max-width: 770px) {
-	#projectsPage {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: center;
-	}
-}
-
-h6 {
-	margin: 0.1em;
-	text-align: center;
-}
-.projectLabel {
-	margin-bottom: none;
-	text-align: center;
-	font-size: 1.5em;
-	font-weight: 500;
-	align-items: center;
-}
-
-label {
-	margin: 2em;
-}
-
-#githubWork {
-	flex-direction: column;
-	margin: 2em;
-	align-content: center;
-}
-
 /* modal styling */
 
 #main {
@@ -213,34 +173,4 @@ label {
 
 #submit-button {
 	align-self: center;
-}
-
-/* Footer Styling */
-
-#bottom {
-	flex-shrink: 0;
-	width: 100%;
-	background-color: #fff;
-	z-index: 99;
-}
-
-#footer {
-	display: flex;
-	justify-content: space-around;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	font-size: x-large;
-}
-
-.footerSelector {
-	text-decoration: none;
-	color: rgb(12, 108, 187);
-	font-weight: 500;
-}
-
-@media screen and (max-width: 770px) {
-	.footerSelector {
-		font-size: medium;
-		font-weight: 400;
-	}
 }
