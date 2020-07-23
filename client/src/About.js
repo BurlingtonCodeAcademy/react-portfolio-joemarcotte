@@ -30,6 +30,7 @@ class About extends React.Component {
 						or at the community swimming pool. I am also a big time foodie and
 						have been recently working on expanding my pallette.
 					</p>
+					
 					<p>
 						My interest in coding started in high school while working on the
 						school's web page, but I decided not to attend college after high

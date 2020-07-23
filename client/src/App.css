@@ -2,13 +2,13 @@
 
 html,
 body {
-	height: 100%;
+	background-color: rgba(38, 43, 47, 0.541);
+	height: 100vh;
 }
 
 #body {
 	display: flex;
 	flex-direction: column;
-	background-color: black;
 }
 
 #content {
@@ -22,7 +22,7 @@ body {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: #fff;
+	background-color: rgba(38, 43, 47, 0.541);
 	z-index: 99;
 }
 
@@ -36,7 +36,7 @@ body {
 
 .bannerSelector {
 	text-decoration: none;
-	color: rgb(12, 108, 187);
+	color: rgb(8, 0, 56);
 	font-weight: 500;
 }
 
@@ -56,12 +56,29 @@ body {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	color: rgb(12, 108, 187);
+	color: rgb(8, 0, 56);
 }
 
 @media screen and (max-width: 770px) {
 	#homePage {
 		flex-direction: column-reverse;
+	}
+}
+
+.selfie {
+	background-image: url(./media/selfie.jpg);
+	border-radius: 20em;
+	height: 600px;
+	margin-right: 3em;
+	width: 600px;
+}
+
+@media screen and (max-width: 770px) {
+	.selfie {
+		/*align-content: center;*/
+		margin: 0em;
+		width: 250px;
+		height: 317px;
 	}
 }
 
@@ -71,7 +88,7 @@ body {
 	font-weight: 700;
 }
 
-#homePageQuote {
+#homePageSaying {
 	margin-left: 3em;
 	font-size: 1.5em;
 	font-weight: 500;
@@ -85,14 +102,7 @@ body {
 	}
 }
 
-@media screen and (max-width: 770px) {
-	#homePageQuote {
-		align-content: center;
-		margin-left: 0em;
-		font-size: 1em;
-		margin-bottom: 1em;
-	}
-}
+
 
 /* About page styling */
 
@@ -103,7 +113,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	color: rgb(12, 108, 187);
+	color: rgb(8, 0, 56);
 }
 
 #aboutContent {
@@ -123,6 +133,47 @@ body {
 }
 
 /* Projects page styling */
+
+#projectsPage {
+	margin: 2em 1em 1em 1em;
+	padding: 1em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	color: rgb(8, 0, 56);
+}
+
+@media screen and (max-width: 770px) {
+	#projectsPage {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+
+h6 {
+	margin: 0.1em;
+	text-align: center;
+}
+.projectLabel {
+	margin-bottom: none;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 500;
+	align-items: center;
+}
+
+label {
+	margin: 2em;
+}
+
+#githubWork {
+	flex-direction: column;
+	margin: 2em;
+	align-content: center;
+}
 
 /* modal styling */
 
@@ -173,4 +224,34 @@ body {
 
 #submit-button {
 	align-self: center;
+}
+
+/* Footer Styling */
+
+#bottom {
+	flex-shrink: 0;
+	width: 100%;
+	background-color: #fff;
+	z-index: 99;
+}
+
+#footer {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: x-large;
+}
+
+.footerSelector {
+	text-decoration: none;
+	color: rgb(12, 108, 187);
+	font-weight: 500;
+}
+
+@media screen and (max-width: 770px) {
+	.footerSelector {
+		font-size: medium;
+		font-weight: 400;
+	}
 }

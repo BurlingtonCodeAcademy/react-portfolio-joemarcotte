@@ -5,7 +5,7 @@ import Header from "./Header";
 import Home from "./Home";
 import About from "./About";
 //import Projects from "./Projects";
-// import Footer from "./Footer";
+import Footer from "./Footer";
 import Form from "./Form";
 
 class App extends React.Component {
@@ -41,7 +41,6 @@ class App extends React.Component {
 					</div>
 
 					<Switch>
-					
 						{/* Component page paths */}
 						<Route exact path="/" render={() => <Home />} />
 						<Route path="/about" render={() => <About />} />
@@ -49,12 +48,11 @@ class App extends React.Component {
 					</Switch>
 
 					<div id="bottom">
-						{" "}
 						{/*Footer - sticks to bottom and gets pushed down by content */}
-						{/*	<Footer
+						<Footer
 							modalOpen={this.state.modalOpen}
 							handleOpen={this.handleOpen}
-						/>*/}
+						/>
 					</div>
 
 					<div
