@@ -28,9 +28,10 @@ class About extends React.Component {
 						spending time with my wife and kids. We can usually be found
 						camping, on a rail trail riding our bikes, at a state park swimming
 						or at the community swimming pool. I am also a big time foodie and
-						have been recently working on expanding my pallette.
+						have been recently working on expanding my pallette and have a newfound love of Sushi and Thai food.
 					</p>
-					
+					<div className='family'></div>
+
 					<p>
 						My interest in coding started in high school while working on the
 						school's web page, but I decided not to attend college after high

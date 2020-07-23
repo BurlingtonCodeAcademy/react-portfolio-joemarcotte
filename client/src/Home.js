@@ -16,7 +16,6 @@ class Home extends React.Component {
 				</div>
 				<div>
 					<div id="homeName">Joe Marcotte</div>
-					
 				</div>
 			</div>
 		);

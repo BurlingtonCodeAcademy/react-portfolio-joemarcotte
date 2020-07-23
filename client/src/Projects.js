@@ -1,17 +1,19 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { render } from "react-dom";
 
 class Projects extends React.Component {
-    constructor(props) {
-        super(props)
+	constructor(props) {
+		super(props);
 
-        this.state = {
+		this.state = {};
+	}
+}
 
-        }
-    }
+render() {
 
-}    
-    
+    return(
+        id='projectPage'
 
-
+}
 export default Projects;
