@@ -4,7 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import Header from "./Header";
 import Home from "./Home";
 import About from "./About";
-//import Projects from "./Projects";
+import Projects from "./Projects";
 import Footer from "./Footer";
 import Form from "./Form";
 
@@ -44,7 +44,7 @@ class App extends React.Component {
 						{/* Component page paths */}
 						<Route exact path="/" render={() => <Home />} />
 						<Route path="/about" render={() => <About />} />
-						{/*<Route path={"/projects"} render={() => <Projects />} />*/}
+						<Route path={"/projects"} render={() => <Projects />} />
 					</Switch>
 
 					<div id="bottom">

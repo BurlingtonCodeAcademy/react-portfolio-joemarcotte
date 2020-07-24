@@ -88,8 +88,6 @@ body {
 	font-weight: 700;
 }
 
-
-
 @media screen and (max-width: 770px) {
 	#homeName {
 		align-content: center;
@@ -132,7 +130,7 @@ body {
 
 /* Projects page styling */
 
-#projectsPage {
+#projectsName {
 	margin: 2em 1em 1em 1em;
 	padding: 1em;
 	display: flex;
@@ -143,7 +141,7 @@ body {
 }
 
 @media screen and (max-width: 770px) {
-	#projectsPage {
+	#projectsName {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -155,7 +153,7 @@ h6 {
 	margin: 0.1em;
 	text-align: center;
 }
-.projectLabel {
+.projectName {
 	margin-bottom: none;
 	text-align: center;
 	font-size: 1.5em;
@@ -243,8 +241,9 @@ label {
 
 .footerSelector {
 	text-decoration: none;
-	color: rgb(12, 108, 187);
+	color: rgb(230, 14, 24);
 	font-weight: 500;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 770px) {
